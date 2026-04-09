@@ -236,3 +236,266 @@ footer a:hover {
     color: var(--orange-vif);
     transform: translateY(-3px);
 }
+h1{
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+h1::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+}
+.projets{
+    padding: 50px 20px;
+    align-items: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 30px;
+  
+}
+.card{
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgb(0, 0,0,0.08);
+}
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgb(0, 0,0,0.15);
+}
+.card img{
+    width: 100%;
+    height: 10.5rem;
+    object-fit: cover;
+    border-bottom: 4px solid var(--violet-doux);
+    border-radius: 0;   
+    padding: 0;
+
+}
+.card h3{
+    font-size: 18px;
+    margin: 15px;
+    color: var(--violet-doux);
+}
+.card p{
+    font-size: 14px;
+    margin: 0 15px 15px;
+    color: var(--gris-fonce);
+}
+.tags{
+    margin-top: 10px;
+    padding: 15px;
+}
+.tags span{
+    display: inline-block;
+    background: #EEE;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px 5px 10px 0;
+    font-size: 1rem;
+    color: var(--violet-fonce);
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 15px;
+    border-top: 2px solid #EEE;
+}
+.link a{
+    text-decoration: none;
+    color: var(--gris-trés-fonce);
+    font-weight: bold;
+    font-size: 14px;
+}
+.link a:hover{
+    text-decoration: underline;
+}
+/* SECTION CONTACT */
+.contact {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centre vertical */
+  align-items: center; /* centre horizontal */
+  text-align: center;
+  padding: 40px;
+}
+
+/* TITRE */
+.contact h1 {
+  margin-bottom: 10px;
+}
+
+/* TEXTE */
+.contact p {
+  max-width: 500px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* FORMULAIRE */
+form {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* GROUPE INPUT */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* INPUT + TEXTAREA */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+/* EFFET FOCUS */
+input:focus, textarea:focus {
+  border-color: black;
+}
+
+/* BOUTON */
+button {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER */
+button:hover {
+  background: #333;
+}
+.timeline {
+    border-left: 3px solid #007bff;
+    margin: 40px;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: #007bff;
+    border-radius: 50%;
+}
+
+.timeline-item h3 {
+    margin-bottom: 5px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 30px;
+}
+
+.box {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+}/* Section */
+/* SECTION PASSIONS */
+.passion-section {
+    padding: 80px 20px;
+    background: #ffffff;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* TITRE */
+.passion-section h1 {
+    font-size: 2.5rem;
+    color: var(--violet-doux);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 50px;
+}
+
+/* CONTAINER */
+.passion-container {
+    border-left: 2px solid #e5e7eb;
+    padding-left: 30px;
+}
+
+/* ITEM */
+.passion-card {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 10px;
+}
+
+/* POINT SUR LA LIGNE */
+.passion-card::before {
+    content: "";
+    position: absolute;
+    left: -38px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background: #4f46e5;
+    border-radius: 50%;
+}
+
+/* TITRE PASSION */
+.passion-card h3 {
+    font-size: 1.2rem;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+/* TEXTE */
+.passion-card p {
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* HOVER (léger et pro) */
+.passion-card:hover h3 {
+    color: #4f46e5;
+}
